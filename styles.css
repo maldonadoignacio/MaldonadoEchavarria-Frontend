@@ -14,8 +14,11 @@
 }
 .precio{
     font: bold;
-} */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800&display=swap')
+}
+div*4.nombre de clase$ */
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800&display=swap')*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +26,7 @@
     text-decoration: none;
     list-style: none;
 }
+
 .body {
     font-family: 'Poppins', sans-serif;
 }
@@ -107,6 +111,83 @@
     margin-bottom: 25px;
 
 }
+@media (max-width: 768px){
+    .header {
+        background-color: grey;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        color: #FFFDFC;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    .menu .navbar ul li {
+        position: relative;
+        float: left;
+    }
+    
+    .menu .navbar ul li a {
+        font-size: 16px;
+        padding: 20px;
+        color: #FFFDFC;
+        display: block;
+        font-weight: 600;
+    }
+    
+    .menu .navbar ul li a:hover{
+        color: #CE967B;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    .menu-icono {
+        width: 25px;
+    }
+    
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+    
+    .header-content {
+        text-align: center;
+    }
+    
+    .header-content h1 {
+        font-size: 60px;
+        line-height: 80px;
+        color: #F9FAFC;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    
+    .header-content p {
+        font-size: 14px;
+        color: #C5C5C5;
+        padding: 0 250px;
+        margin-bottom: 25px;
+    
+    }
+    
+}
 
 .btn-1 {
     display: inline-block;
@@ -154,10 +235,14 @@
 
 .juegos-1 {
     padding: 0 25px;
+    border: #ebad8d solid 3px;
+    border-radius: 35px;
+    background-color: #ebad8d;
 }
 
 .juegos-1 img {
     width: 200px;
+    padding-top: 10px;
 }
 
 .juegos-img {
@@ -167,6 +252,42 @@
 }
 
 .juegos-1 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.juegos-2 {
+    padding: 0 25px;
+    border: #ebad8d solid 3px;
+    border-radius: 35px;
+    background-color: #ebad8d;
+}
+
+.juegos-2 img {
+    width: 200px;
+    padding-top: 10px;
+}
+
+.juegos-2 h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.juegos-3 {
+    padding: 0 25px;
+    border: #ebad8d solid 3px;
+    border-radius: 35px;
+    background-color: #ebad8d;
+}
+
+.juegos-3 img {
+    width: 200px;
+    padding-top: 10px;
+}
+
+.juegos-3 h3 {
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
