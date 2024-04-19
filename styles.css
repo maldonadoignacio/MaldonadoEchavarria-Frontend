@@ -332,8 +332,9 @@ div*4.nombre de clase$ */
 }
 
 .services-1 img {
-    width: 100px;
+    width: 100%;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .services-1 h3 {
@@ -352,7 +353,7 @@ div*4.nombre de clase$ */
 }
 
 .general-2 {
-    background-image: url(Multimedia/montaña.jpg);
+    background-image: url(Multimedia/catan.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -360,7 +361,7 @@ div*4.nombre de clase$ */
 }
 
 .general-3 {
-    background-image: url(Multimedia/montaña.jpg);
+    background-image: url(Multimedia/monopoly2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -381,7 +382,7 @@ p {
     margin: 25px 0 45px 0;
 }
 
-.blog {
+/* .blog {
     padding: 100px 0;
     text-align: center;
 }
@@ -432,7 +433,7 @@ p {
 .blog-3 h3 {
     font-size: 25px;
     color: #323337;
-}
+} */
 
 .footer {
     padding: 100px 0;
@@ -470,3 +471,45 @@ link h3 {
     background-color: #076E21;  
 }
 
+.sliderh2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.frame-slider{
+    width: 800px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.frame-slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.frame-slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.frame-slider img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
