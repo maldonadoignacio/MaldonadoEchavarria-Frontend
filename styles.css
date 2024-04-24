@@ -233,61 +233,34 @@ div*4.nombre de clase$ */
     margin-bottom: 50px;
 }
 
+
 .juegos-1 {
     padding: 0 25px;
     border: #ebad8d solid 3px;
     border-radius: 35px;
     background-color: #ebad8d;
+    transition: all 1s ease;
+}
+
+.juegos-1:hover {
+    box-shadow: 5px 5px 20px black;
+    border-radius: 35px;
+    transform: translateY(-3%);
 }
 
 .juegos-1 img {
     width: 200px;
     padding-top: 10px;
+    border-radius: 35px;
 }
 
 .juegos-img {
     position: absolute;
-    top: 0;
+    top: 1;
     right: 0;
 }
 
 .juegos-1 h3 {
-    color: #323337;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.juegos-2 {
-    padding: 0 25px;
-    border: #ebad8d solid 3px;
-    border-radius: 35px;
-    background-color: #ebad8d;
-}
-
-.juegos-2 img {
-    width: 200px;
-    padding-top: 10px;
-}
-
-.juegos-2 h3 {
-    color: #323337;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.juegos-3 {
-    padding: 0 25px;
-    border: #ebad8d solid 3px;
-    border-radius: 35px;
-    background-color: #ebad8d;
-}
-
-.juegos-3 img {
-    width: 200px;
-    padding-top: 10px;
-}
-
-.juegos-3 h3 {
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
@@ -357,7 +330,7 @@ div*4.nombre de clase$ */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 50%;
 }
 
 .general-3 {
@@ -365,7 +338,7 @@ div*4.nombre de clase$ */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 50%;
 }
 
 h2 {
@@ -445,7 +418,7 @@ p {
     justify-content: space-between;
 }
 
-link h3 {
+.link h3 {
     font-size: 18px;
     color: #F9FAFC;
     margin-bottom: 15px;
@@ -456,6 +429,12 @@ link h3 {
     color: #C5C5C5;
     display: block;
     margin-bottom: 15px;
+    transition: all 500ms ease;
+}
+
+.link a:hover {
+    color: white;
+    transform: translateY(-10%);
 }
 
 .compra-1 {
@@ -465,6 +444,7 @@ link h3 {
     color: #F9FAFC;
     text-transform: uppercase;
     justify-content: space-between;
+    transition: all 500ms ease;
 }
 
 .compra-1:hover {
