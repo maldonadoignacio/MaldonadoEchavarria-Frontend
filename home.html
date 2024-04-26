@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Pagina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -16,24 +17,38 @@
     
     <header class="header">
         <div class="menu container">
-          <a href="#" class="logo">Logo</a>
+          <a href="#" class="logo"><img src="Multimedia/logo.png" alt=""></a>
           <input type="checkbox" id="menu">
-          <label for="manu">
-            <img src="" class="manu-icono" alt="">
+          <label for="menu">
+            <img src="" class="menu-icono" alt="">
           </label>
           <nav class="navbar">
             <ul>
               <li><a href="#">Inicio</a></li>
               <li><a href="#">Servicio</a></li>
-              <li><a href="#">Productos</a></li>
-              <li><a href="#">Contactanos</a></li>
+              <li>
+                <a href="#">Productos</a>
+                <ul class="menu-vertical">
+                  <li><a href="#">Juegos de mesa</a></li>
+                  <li><a href="#">Accesorios</a></li>
+                  <li><a href="#">Juegos de cartas</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Contactanos</a>
+                <ul class="menu-vertical">
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </div>
 
         <div class="header-content container">
 
-          <h1>Juegos de Mesa</h1>
+          <h1>RolDado y Tablero</h1>
           <p>
             En esta página podras encontrar variedad de juegos de mesa, juegos de todas las edades, desde los mas interactivos como juegos de grupo hasta los mas individualistas como juegos de carta o de pocos jugadores
           </p>
@@ -42,53 +57,154 @@
         </div>
     </header>
 
-    <section class="juegos">
+    <section class="productos-chidos">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-      <div class="juegos-content container">
-
-        <h2>Los diferentes juegos</h2>
-        <!-- <div class="busqueda">
-          <input type="text" placeholder="Buscar...">
-          <div class="buscar">
-            <i class="busca"></i>
+          <div class="swiper-slide">
+            <div class="iconos">
+              <i class="fa-solid fa-circle-arrow-left"> </i>
+              <img src="./Multimedia/logo.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+              <div class="product-txt">
+                <span>$19,99</span>
+                <h3>Catan</h3>
+                <p>Descubre nuevas tierras y conquista territorios con nuestra selección de Catan. Desde estrategias comerciales hasta aventuras épicas, encuentra tu próximo desafío aquí.</p>
+              </div>
+              <div class="product-img">
+                <img src="Multimedia/catan.jpg" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-5">Comprar</a>
           </div>
 
-        </div> -->
-        <p class="txt-p">
-          Catalogo para encontrar tus juegos favoritos, recuerda que hay juegos en descuento!
-        </p>
+          <div class="swiper-slide">
+            <div class="iconos">
+              <i class="fa-solid fa-circle-arrow-left"> </i>
+              <img src="./Multimedia/logo.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+              <div class="product-txt">
+                <span>$24,99</span>
+                <h3>Monopoly</h3>
+                <p>Compra, vende y negocia para convertirte en el magnate de los bienes raíces con nuestra colección de juegos de Monopoly. Explora nuevas estrategias y hazte con la victoria en el mundo inmobiliario más emocionante.</p>
+              </div>
+              <div class="product-img">
+                <img src="Multimedia/monopoly2.jpg" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-5">Comprar</a>
+          </div>
 
-        <div class="juegos-group">
-          <div class="juegos-1">
-            <img src="./Multimedia/monopoly2.jpg" alt="">
+          <div class="swiper-slide">
+            <div class="iconos">
+              <i class="fa-solid fa-circle-arrow-left"> </i>
+              <img src="./Multimedia/logo.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+              <div class="product-txt">
+                <span>$9,99</span>
+                <h3>Ludo</h3>
+                <p>Embárcate en una emocionante carrera hacia la meta. Desde divertidas partidas en familia hasta competiciones amistosas, encuentra la diversión que estás buscando con nuestros juegos de mesa de Ludo.</p>
+              </div>
+              <div class="product-img">
+                <img src="Multimedia/Ludo.jpg" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-5">Comprar</a>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="iconos">
+              <i class="fa-solid fa-circle-arrow-left"> </i>
+              <img src="./Multimedia/logo.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+              <div class="product-txt">
+                <span>$14,99</span>
+                <h3>Poker</h3>
+                <p>Explora la emoción del póker con nuestra variedad de opciones. Desde partidas casuales entre amigos hasta torneos de alto nivel, encuentra la estrategia y la diversión que buscas en nuestros juegos de póker.</p>
+              </div>
+              <div class="product-img">
+                <img src="Multimedia/poker.jpg" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-5">Comprar</a>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="iconos">
+              <i class="fa-solid fa-circle-arrow-left"> </i>
+              <img src="./Multimedia/logo.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+              <div class="product-txt">
+                <span>$7,99</span>
+                <h3>Damas</h3>
+                <p>
+                  Sumérgete en la estrategia y la elegancia. Desde movimientos calculados hasta emocionantes enfrentamientos, descubre la emoción de cada jugada y la satisfacción de conquistar el tablero en nuestros juegos de damas.</p>
+              </div>
+              <div class="product-img">
+                <img src="Multimedia/damas.jpg" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-5">Comprar</a>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="iconos">
+              <i class="fa-solid fa-circle-arrow-left"> </i>
+              <img src="./Multimedia/logo.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+              <div class="product-txt">
+                <span>$29,99</span>
+                <h3>Scrable</h3>
+                <p>
+                  ¡Desafía tu mente y desata tu creatividad! Convierte letras en palabras, y palabras en puntos mientras compites contra amigos o familiares. ¿Estás listo para formar las palabras más ingeniosas y conquistar el tablero? ¡Compra Scrable!</p>
+              </div>
+              <div class="product-img">
+                <img src="Multimedia/scrable2.jpg" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-5">Comprar</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="agotado">
+      <h1>Nuestos juegos agotados</h1>
+      <p>Lamentablemente ya no contamos con stock de estos juegos, igualmente ¡Proximamanete los volveremos a tener! </p>
+
+      <div class="fila">
+        <div class="agotado-columna">
+          <img src="./Multimedia/monopoly2.jpg" alt="">
+          <div class="layer">
             <h3>Monopoly</h3>
-            <p>
-              Precio: 9,99$
-            </p>
-            <p>
-              <a href="#" class="compra-1">Comprar</a>
-            </p>
-          </div>
-          <div class="juegos-1">
-            <img src="./Multimedia/Ludo.jpg" alt="">
-            <h3>Ludo</h3>
-            <p>
-              Precio: 12,49$
-            </p>
-            <a href="#" class="compra-1">Comprar</a>
-          </div>
-          <div class="juegos-1">
-            <img src="./Multimedia/damas.jpg" alt="">
-            <h3>Damas</h3>
-            <p>
-              Precio: 19,99$
-            </p>
-            <a href="#" class="compra-1">Comprar</a>
           </div>
         </div>
-        <a href="#" class="btn-1">Informacion</a>
+        <div class="agotado-columna">
+          <img src="./Multimedia/poker.jpg" alt="">
+          <div class="layer">
+            <h3>Poker</h3>
+          </div>
+        </div>
+        <div class="agotado-columna">
+          <img src="./Multimedia/Ludo.jpg" alt="">
+          <div class="layer">
+            <h3>Ludo</h3>
+          </div>
+        </div>
       </div>
-
     </section>
 
     <main class="services">
@@ -119,30 +235,46 @@
       </div>
     </main>
 
+    <section class="reseñas">
+      <h1>Reseñas de nuestros usuarios</h1>
+      <p>Totalmente ciertas nada falso, porque serian falsas si son ciertas</p>
 
-    <section class="general">
-      <div class="general-1">
-        <h2>Juego más comprado</h2>
-        <p>
-          Aca siempre aparecera el juego mas comprado de la semana. Se actualiza todas las semanas de forma constante, comprando el juego aportaras a que tu juego favorito aparezca aca.
-        </p>
-        <a href="#" class="btn-1">Informacion</a>
+      <div class="fila">
+        <div class="reseñas-columna">
+          <img src="./Multimedia/incognito.png" alt="">
+          <div>
+            <p>Desde el momento en que entras a esta página, te das cuenta de que estás en un lugar especial. Esta página de juegos de mesa es más que un simple sitio web, es un verdadero santuario para los amantes de los juegos de mesa.
+
+              La variedad de juegos disponibles es impresionante. Cada juego viene con una descripción detallada y completa, lo que facilita la elección del juego perfecto para cualquier ocasión.
+              
+              La interfaz de la página es intuitiva y fácil de navegar. Ya sea que estés buscando un juego específico o simplemente explorando, es fácil encontrar lo que necesitas.
+            </p>
+            <h3>Alguien sin padres</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+
+        </div>
+        <div class="reseñas-columna">
+          <img src="./Multimedia/incognito.png" alt="">
+          <div>
+            <p>Mi experiencia en RolDado y Tablero fue bastante negativa debido a la interfaz confusa, el servicio al cliente deficiente y la falta de variedad en la selección de juegos. Recomiendo buscar alternativas más sólidas y satisfactorias para comprar juegos de mesa en línea.</p>
+            <h3>Alguien sin padres ni abuelos</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+
+        </div>
       </div>
-      <div class="general-2"></div>
     </section>
 
-    <section class="general">
-      <div class="general-3"></div>
-      <div class="general-1">
-        <h2>Juego con mejor descuento</h2>
-        <p>
-          Siempre tenemos los mejores juegos con los mejores descuentos! Este es un apartado facil para poder ver el mejor juego del momento, mezcla los juegos mas populares con los juegos con mejor descuento.
-        </p>
-        <a href="#" class="btn-1">Informacion</a>
-      </div>
-    </section>
-
-    <section>
+    <!-- <section class="sliderin">
       <h2 class="sliderh2">Juegos recomendados</h2>
       <div class="frame-slider">
         <ul>
@@ -152,53 +284,10 @@
           <li><img src="./Multimedia/scrable2.jpg" alt=""></li>
         </ul>
       </div>
-    </section>
-
-    <!-- <section class="blog container">
-
-      <h2>¿Más juegos?</h2>
-      <p></p>
-
-      <div class="blog-content">
-
-        <div class="blog-1">
-          <img src="./Multimedia/Pajaro.jpg" alt="">
-          <h3>Juego 1</h3>
-          <p>
-            Algo que tenga que ver
-          </p>
-
-        </div>
-        <div class="blog-2">
-          <img src="./Multimedia/Pajaro.jpg" alt="">
-          <h3>Juego 2</h3>
-          <p>
-            Algo que tenga que ver
-          </p>
-
-        </div>
-        <div class="blog-3">
-          <img src="./Multimedia/Pajaro.jpg" alt="">
-          <h3>Juego 3</h3>
-          <p>
-            Algo que tenga que ver
-          </p>
-
-        </div>
-      </div>
-      <a href="#" class="btn-1">Informacion</a>
     </section> -->
 
     <footer class="footer">
       <div class="footer-content container">
-        <div class="link">
-          <h3>Seguinos</h3>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
         <div class="link">
           <h3>Ayuda</h3>
           <ul>
@@ -220,88 +309,31 @@
             <li><a href="#">Logros</a></li>
           </ul>
         </div>
+        <div class="link">
+          <h3>Seguinos</h3>
+          <ul>
+            <li><a href="#" class="fab fa-facebook-f"></a></li>
+            <li><a href="#" class="fab fa-twitter"></a></li>
+            <li><a href="#" class="fab fa-instagram"></a></li>
+            <li><a href="#" class="fab fa-youtube"></a></li>
+          </ul>
+        </div>
       </div>
     </footer>
-    <!-- <main>
-        <div class="imagenes">
-            <div class="card" style="width: 18rem;">
-                <img src="./Multimedia/scrable.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Scrable</h5>
-                  <p class="card-text">El Scrable es un juego de mesa que trata sobre armar palabras con las letras que te tocan en la mano.</p>
-                </div>
-                <ul class="Precio">
-                  <li class="list-group-item">14999$</li>
-                  <li class="list-group-item">Descuentos</li>
-                  <li class="list-group-item">Metodos</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Comprar Juego</a>
-                  <a href="#" class="card-link">Pagina de creadores</a>
-                </div>
-              </div>
-
-
-              <div class="card" style="width: 18rem;">
-                <img src="./Multimedia/Preguntados.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Preguntados</h5>
-                  <p class="card-text">El juego preguntados trata sobre preguntas y respuestas, en el que tendras que ir avanzando para ganar.</p>
-                </div>
-                <ul class="Precio">
-                  <li class="list-group-item">19999$</li>
-                  <li class="list-group-item">Descuentos</li>
-                  <li class="list-group-item">Metodos</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Comprar</a>
-                  <a href="#" class="card-link">Pagina de creador</a>
-                </div>
-              </div>
-
-
-              <div class="card" style="width: 18rem;">
-                <img src="./Multimedia/monopoly.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Monopoly</h5>
-                  <p class="card-text">Este conocido juego consta en ser un empedernido empresario que se centra en apropiarse con todas las propiedades del tablero.</p>
-                </div>
-                <ul class="Precio">
-                  <li class="list-group-item">24999$</li>
-                  <li class="list-group-item">Descuentos</li>
-                  <li class="list-group-item">Metodos</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Comprar</a>
-                  <a href="#" class="card-link">Pagina de creador</a>
-                </div>
-              </div>
-
-
-              <div class="card" style="width: 18rem;">
-                <img src="./Multimedia/jenga.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Jenga</h5>
-                  <p class="card-text">Un juego en el que tendras que pelear con tu oponente en dejar la torre en pie mientras vas sacando piezas de esta misma.</p>
-                </div>
-                <ul class="Precio">
-                  <li class="list-group-item">9999$</li>
-                  <li class="list-group-item">Descuentos</li>
-                  <li class="list-group-item">Metodos</li>
-                </ul>
-                <div class="card-body">
-                  <a href="#" class="card-link">Comprar</a>
-                  <a href="#" class="card-link">Pagina de creador</a>
-                </div>
-              </div>
-
-        </div>
-        <div class="texto">
-
-
-        </div>
-    </main>
-
-    <footer>Find us on twitter</footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper",{
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: false,
+        coverflowEffect: {
+          depth: 500,
+          modifer:1,
+          slidesShadows: true
+        }
+      })
+    </script>
 </body>
 </html>
