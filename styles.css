@@ -1,22 +1,3 @@
-/* .header{
-    padding: 20px;
-    text-align: center;
-}
-.imagenes {
-    justify-content: space-between;
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    
-}
-.card-link{
-    color: rgb(196, 76, 29);
-}
-.precio{
-    font: bold;
-}
-div*4.nombre de clase$ */
-/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;500;600;700;800&display=swap')*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -121,7 +102,7 @@ div*4.nombre de clase$ */
     margin-bottom: 25px;
 
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .header {
         background-color: grey;
         background-position: center bottom;
@@ -197,12 +178,12 @@ div*4.nombre de clase$ */
     
     }
     
-}
+} */
 
 .btn-1 {
     display: inline-block;
     padding: 11px 35px;
-    background-color: #CE967B;
+    background-color: #C28D74;
     color: #F9FAFC;
     text-transform: uppercase;
 }
@@ -358,7 +339,7 @@ p {
 .productos-chidos{
     position: relative;
     height: 100%;
-    background-color: #323232;
+    background-image: url(./Multimedia/negro.jpg);
     font-family: poppins, sans-serif;
     font-size: 14px;
     color: #000;
@@ -523,7 +504,7 @@ p {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #fff3f3;
+    background: #F3E5DE;
     padding: 25px;
     cursor: pointer;
     display: flex;
@@ -547,3 +528,132 @@ p {
 .reseñas-columna .fa{
     color: gold;
 }
+
+@media only screen and (max-width: 360px) {
+    .header {
+        min-height: 50vh;
+    }
+    .header-content h1 {
+        font-size: 50px;
+    }
+    .header-content p {
+        font-size: 14px;
+        padding: 0 50px;
+    }
+      
+    .menu {
+        flex-direction: column;
+    }
+    .menu .navbar {
+        display: none;
+    }
+    .menu .navbar ul li a {
+        padding: 10px;
+    }
+    .menu-vertical {
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .menu-vertical ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+    }
+    .menu-icono {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-image: url("menu-icon.png");
+        background-size: cover;
+        cursor: pointer;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    #menu-toggle:checked ~ .menu-vertical {
+        display: block;
+    }
+    #menu-toggle:checked ~ .menu .navbar {
+        display: block;
+    }
+  
+    .services-content h2 {
+      font-size: 40px;
+    }
+    .services-content p {
+      font-size: 14px;
+      padding: 0 50px;
+    }
+    .services-group {
+      flex-direction: column;
+    }
+    .services-1 {
+      padding: 0;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+    }
+    .link h3 {
+      font-size: 16px;
+    }
+    .link a {
+      font-size: 14px;
+    }
+  
+    .swiper {
+      padding: 100px 0 0 0;
+    }
+    .swiper-slide {
+      width: 300px;
+      height: 500px;
+    }
+    .product-content {
+      flex-direction: column;
+    }
+    .product-txt {
+      text-align: center;
+    }
+    .product-txt span {
+      font-size: 40px;
+    }
+    .product-txt h3 {
+      font-size: 25px;
+    }
+    .product-txt p {
+      font-size: 14px;
+    }
+    .product-img {
+      text-align: center;
+    }
+    .product-img img {
+      width: 150px;
+    }
+  
+    .agotado {
+      width: 100%;
+      font-size: 40px;
+      margin: 20px auto;
+    }
+  
+    .reseñas {
+      width: 100%;
+      padding-top: 50px;
+    }
+    .reseñas h1 {
+      font-size: 40px;
+    }
+    .reseñas-columna {
+      flex-basis: 100%;
+      margin-bottom: 10px;
+    }
+    .reseñas-columna img {
+      height: 60px;
+    }
+    .reseñas-columna h3 {
+      margin-top: 10px;
+    }
+  }
