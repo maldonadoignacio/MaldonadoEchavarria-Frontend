@@ -1,12 +1,12 @@
 const botoncomprar = document.querySelectorAll('.btn-5');
 
 botoncomprar.forEach(function(boton) {
-  let originalColor = boton.style.backgroundColor;
+  let colororiginal = boton.style.backgroundColor;
   boton.onmouseout = function() {
     boton.style.backgroundColor = 'black';
   };
   boton.onmouseover = function() {
-    boton.style.backgroundColor = originalColor;
+    boton.style.backgroundColor = colororiginal;
   };
 });
 
@@ -58,7 +58,13 @@ reviewForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const name = document.getElementById('name').value;
   const review = document.getElementById('review').value;
+
+  console.log(`Nombre: ${name}`);
+  console.log(`Reseña: ${review}`);
+  
   alert(`La siguiente reseña se envió:\n\nNombre: ${name}\nReseña: ${review}`);
   document.getElementById('name').value = '';
   document.getElementById('review').value = '';
 });
+
+
