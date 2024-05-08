@@ -657,3 +657,60 @@ p {
       margin-top: 10px;
     }
   }
+
+.añadir-review {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+  
+.añadir-review h2 {
+    font-size: 55px;
+}
+  
+  
+.añadir-review form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+  
+  
+.añadir-review label {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.añadir-review input,
+  
+.añadir-review textarea {
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+  
+  
+.añadir-review textarea {
+    resize: vertical;
+}
+  
+.añadir-review button {
+    width: 20%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #323232;
+    color: #fff;
+    cursor: pointer;
+}
+  
+  
+.añadir-review button:hover {
+    background-color: #444;
+}

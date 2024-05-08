@@ -39,10 +39,26 @@ botonservicio.forEach(function(botonS) {
   };
 });
 
-window.onbeforeunload = function() {
-  alert('Entrando a la mejor página!');
-};
+
+const agotadoColumnas = document.querySelectorAll('.agotado-columna');
+
+agotadoColumnas.forEach((columna) => {
+  columna.addEventListener('click', () => {
+    alert('Lo sentimos, este juego está agotado.');
+  });
+});
 
 const ventanaEmergente = window.open('', 'Ventana emergente', 'width=400,height=300');
-ventanaEmergente.document.write('<h1>¡pagina cheta!</h1>');
+ventanaEmergente.document.write('<h1>Entraste a la mejor página</h1>');
 
+
+const reviewForm = document.getElementById('review-form');
+
+reviewForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const review = document.getElementById('review').value;
+  alert(`La siguiente reseña se envió:\n\nNombre: ${name}\nReseña: ${review}`);
+  document.getElementById('name').value = '';
+  document.getElementById('review').value = '';
+});
